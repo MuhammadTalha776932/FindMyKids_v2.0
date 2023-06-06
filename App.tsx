@@ -28,6 +28,7 @@ function App() {
   const { StackContainerScreen } = StackNavigatorScreenNameProvider;
 
   useEffect(() => {
+    
     notificationListener();
     (async () => {
       await Trunk.init();
@@ -43,7 +44,7 @@ function App() {
         <UserProvider>
         <CoordinateProviderComponent>
           <NavigationContainer>
-            <Stack.Navigator
+            <Stack.Navigator 
               initialRouteName={StackContainerScreen}
               screenOptions={({ navigation, route }) => ({ header: () => null })}>
               <Stack.Screen name={StackContainerScreen} component={StackContainer} />

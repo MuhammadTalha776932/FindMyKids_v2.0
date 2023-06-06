@@ -36,7 +36,8 @@ const StackContainer = () => {
                     <Stack.Navigator
 
                         screenOptions={({ navigation, route }) => ({ header: () => null })}
-                        children={<Stack.Screen name={StackNavigatorScreenNameProvider.FindMyKids} children={() => <ParentStack route={{ isVisited: isVisited,isShow:isShow }} />} />}
+                        children={
+                        <Stack.Screen name={StackNavigatorScreenNameProvider.FindMyKids} children={() => <ParentStack route={{ isVisited: isVisited,isShow:isShow }} />} />}
                     />:
                     (<><LoadingScreen message="Loading something owesome..."/></>)
         }

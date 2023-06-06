@@ -6,6 +6,11 @@ interface ISharedLinkScreenProps {
 
     linkText:string,
 }
+
+type propertyKeys = number | string | symbol | boolean; 
+
+let property:propertyKeys = false;
+
 export const SharedLinkScreenData:ISharedLinkScreenProps ={
     title:"To setup your child's phone, send them a link to the Pingo app",
     subTitle: "The Pingo app sends your child's geolocation to the parent's Find My Kids app",
